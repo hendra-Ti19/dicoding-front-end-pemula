@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Bookshelf Apps</h1>
+  </header>
+
+  <div id="toast">
+
+  </div>
+
+  <div class="wrapper">
+
+    <!-- add to do -->
+    <div class="container bg-white shadow" id="add-book">
+      <h2 class="container-header text-center">Tambah List Buku Anda</h2>
+      <form class="form" action="#" id="form">
+        <div class="form-group form-title">
+          <label for="title">Masukkan Judul Buku</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="author">Masukkan Penulis Buku</label>
+          <input type="text" id="author" name="author" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="year">Masukkan Tahun Terbit</label>
+          <input type="number" id="year" name="year" required>
+        </div>
+        <input type="submit" value="Simpan" name="Submit" class="btn-submit">
+      </form>
+    </div>
+
+
+    <div class="container">
+      <div class="list-item" id="search">
+        <form action="#" id="search">
+          <div class="form-group form-title form-group-search">
+            <label for="search-field">Cari Berdasarkan Judul</label>
+            <div class="search-note">
+              <p>Note <span class="text-danger">*</span></p>
+              <small>Submit data kosong untuk reset</small>
+              <small>Masukkan judul lengkap buku</small>
+            </div>
+            <input type="text" id="search-field" name="search-field">
+          </div>
+          <input id="search-button" width="40%" type="submit" value="Cari" name="Submit" class="btn-submit">
+        </form>
+      </div>
+    </div>
+
+    <!-- to do -->
+    <div class="container">
+      <h4 class="container-header">List Buku Yang Belum Di Baca</h4>
+      <div class="list-item" id="books">
+      </div>
+    </div>
+
+    <!-- done -->
+    <div class="container">
+      <h4 class="container-header">List Buku Yang Sudah Dibaca</h4>
+      <div class="list-item" id="completed-books">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
